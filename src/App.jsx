@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 
-import Button from './components/Button/Button'
+import Button from './components/Button/Square'
 import NavBar from './components/NavBar/NavBar';
 
 import Home from './screens/HomeScreen';

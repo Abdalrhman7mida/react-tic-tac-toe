@@ -1,5 +1,5 @@
 import React from "react";
-import './Button.css'
+import './Square.css'
 
 export default function square() {
     return <button className="square">x</button>
