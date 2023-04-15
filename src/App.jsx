@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 
-import Button from './components/Button/Square'
 import NavBar from './components/NavBar/NavBar';
 
 import Home from './screens/HomeScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
+import TicTacToeBoard from './screens/TicTacToeBoard';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="tic-tac-toe" element={<Button />} />
+          <Route path="tic-tac-toe" element={<TicTacToeBoard />} />
           <Route path="*" element={<NotFoundScreen />} />
         </Routes>
       </BrowserRouter>
