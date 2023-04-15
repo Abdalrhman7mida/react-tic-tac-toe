@@ -3,12 +3,18 @@ import {React,useState} from "react";
 import { Square } from '../components/Button/Square'
 
 function TicTacToeBoard() {
+    const[xIsNext, setxIsNext] = useState(true);
     const [squares, setSquares] = useState(Array(9).fill(null));
 
     function handleClick(i) {
         const nextSquares = squares.slice();
-        nextSquares[i] = "x";
+        if(xIsNext) {
+            nextSquares[i] = "x";
+        } else {
+            nextSquares[i] = "o";
+        }
         setSquares(nextSquares);
+        setxIsNext(!xIsNext);
     }
 
     return (
